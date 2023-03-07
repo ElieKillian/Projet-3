@@ -15,6 +15,7 @@
 body {
     margin: 0px;
     padding: 0px;
+    /*font-size: 10px;*/
 }
 .container{
     width: 1440px;
@@ -24,7 +25,8 @@ h2{
     font-style: normal;
     font-weight: 700;
     font-size: 22px;
-    line-height: 26px;
+    /*font-size: 1rem;*/
+    line-height: 26px; 
 }
 h3{
     margin: 0px;
@@ -83,7 +85,7 @@ nav {
     margin-top: 0px;
     padding-bottom: 14px;
     margin-right: 0px;
-    align-items: center;
+    align-items: start;
 } 
 .menu1{
     padding-top: 16px;
@@ -120,7 +122,7 @@ nav {
     flex-direction: column;
     width: 1340px;
     height: 281px;
-    padding-left: 50px;
+    margin-left: 50px;
     gap: 35px;
 }
 .researchtitle{
@@ -139,6 +141,9 @@ form{
     width: 50px;
     height: 49px;
     color: black;
+    background: #F2F2F2;
+    border: 1px solid #F2F2F2;
+    border-radius: 15px 0px 0px 15px;
 }
 .fa-location-dot:before{
     position: relative;
@@ -148,8 +153,9 @@ form{
     top: 15px;
 }
 input [type=search]{
+    border: 1px solid #F2F2F2 ;
     width: 195px;
-    border: hidden;
+    border-style: #f2f2f2;
     height: 21px;
 }
 ::placeholder{
@@ -195,13 +201,30 @@ input[type=submit]{
 .filter:hover{
     background: #DEEBFF;
 }
+.info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap : 20px;
+    padding: 0px;
+    width: 1340px;
+    height: 24px;
+}
+
+.fa-info::before{
+    border: 1px solid #D9D9D9;
+    border-radius: 100%;
+    padding: 50% 100%;
+    max-height: 24px;
+    max-width: 24px;
+}
 
 /* Hébergements - Populaires Card1-2 */
 
 .hébergements-and-populaires{
     display: flex;
     flex-direction: row;
-    padding: 0px;
+    margin-left: 50px;
     gap: 40px;
     width: 1340px;
     height: 611,5px;
@@ -209,10 +232,13 @@ input[type=submit]{
 .hébergements{
     display: flex;
     flex-direction: column;
+    margin-top: 35px;
     padding: 30px;
     gap: 30px; 
     width: 871px;
     height: 611.5px;
+    background-color: #F2F2F2;
+    border-radius: 15px;
 }
 .aligncard1{
     display: flex;
@@ -225,40 +251,58 @@ input[type=submit]{
 .card1 {
     display: flex;
     flex-direction: column;
-    gap: 4px;
     width: 250.33px;
     height: 207.25px;
     box-shadow: 0 3px 15px 0 rgba(0,0,0,0.1);
     border-radius: 20px;
+    background: #FFFFFF;
   }
-  .card1 img {
+.card1 img {
     object-fit: cover;
-    width: 250.33px;
+    width: 240.33px;
     height: 124px;
-    border: 5px solid #FFFFFF;
+    border-top: 5px solid #FFFFFF;
+    border-left: 5px solid #FFFFFF;
+    border-right: 5px solid #FFFFFF;
     border-radius: 20px 20px 0px 0px;
   }
-    .textcard1 {
+.textcard1 {
     display: flex;
     flex-direction: column;
     align-items: start;
-    padding: 0px 15px;
     gap: 8px;
+    margin: 0px 5px;
+    width: 240.33px;
     height: 64.25px;
+    background: #FFFFFF;
+}
+.pcards{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
 }
 .blue_star{
     display: flex;
     flex-direction: row;
+    width: 81px;
+    font-size: 13.25px;
+}
+.empty{
+    color: #F2F2F2;
 }
 
 /* Populaires */
 .populaires{
     display: flex;
     flex-direction: column;
+    margin-top: 35px;
     padding: 30px;
     gap: 30px;
     width: 429px;
     height: 611.5px;
+    background-color: #F2F2F2;
+    border-radius: 15px;
 }
 .titlepopulaires{
     display: flex;
@@ -280,30 +324,35 @@ input[type=submit]{
     flex-direction: row;
     width: 369px;
     height: 144px;    
-    box-shadow: 0 3px 15px 0 rgba(0,0,0,0.1);
+    box-shadow: 0px 3px 15px 0px rgba(0,0,0,0.1);
     border-radius: 20px; 
 }
 .card2 img {
     object-fit: cover;
     width: 123px;
-    height: 144px;
-    border: 5px solid #FFFFFF;
+    height: 134px;
+    border-top: 5px solid #FFFFFF;
+    border-left: 5px solid #FFFFFF;
+    border-bottom: 5px solid #FFFFFF;
     border-radius: 20px 0px 0px 20px;
   }
 .textcard2{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 10px 5px 5px 15px;
+    padding: 5px 0px;
     gap: 24px;
     width: 246px;
     height: 134px;
+    border-radius: 0px 20px 20px 0px;
+    background: #FFFFFF;
 }
 .titlecard2{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0px;
+    padding-top: 15px;
+    padding-left: 15px;
     gap: 5px;
     width: 226px;
     height: 83px;
@@ -311,5 +360,61 @@ input[type=submit]{
 .blue_star2{
     display: flex;
     flex-direction: row;
+    padding-left: 15px;
+    width: 68px;
+    font-size: 12px;
     margin-bottom: 10px;
+}
+
+/* Activites */
+.activites{
+    display:flex;
+    flex-direction: column;
+    margin-top: 65px;
+    margin-left: 50px;
+    width: 1340px;
+    height: 559.02px;
+}
+.aligncard3{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-top: 30px;
+}
+.card3{
+    display: flex;
+    flex-direction: column;
+    width: 297.5px;
+    height: 439px;
+    box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.1));
+    border-radius: 20px;
+}
+.card3 img{
+    object-fit: cover;
+    width: 297.5px;
+    height: 380px;
+    border-radius: 20px 20px 0px 0px;
+}
+.textcard3{
+    margin-top: 20px;
+    margin-left: 19px;
+}
+
+/* Footer */
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 35px;
+    margin-left: 50px;
+    width: 1340px;
+    height: 163px;
+    background: #F2F2F2;
+}
+.foot1{
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    padding: 20px;
+    gap: 15px;
 }
