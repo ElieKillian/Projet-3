@@ -2,54 +2,52 @@
 * {
     font-family: 'Raleway', sans-serif;
 }
-html{
-    font-size: 10px;
-}
+
 :root {
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
     --filter-bg-color: #DEEBFF;
 }
+
 .fa-solid {
     color: var(--main-color);
 }
 body {
-    height: 100%;
-    margin: 0rem;
-    padding: 0rem;
+    margin: 0px;
+    padding: 0px;
+    /*font-size: 10px;*/
 }
 .container{
-    width: 100%;
-    min-width: 3.2rem;
-    max-width: 144rem;
+    width: 1440px;
 }
 h2{
-    margin: 0rem;
+    margin: 0px;
     font-style: normal;
     font-weight: 700;
-    font-size: 2.2rem;
-    line-height: 2.6rem; 
+    font-size: 22px;
+    /*font-size: 1rem;*/
+    line-height: 26px; 
 }
 h3{
-    margin: 0rem;
+    margin: 0px;
     font-style: normal;
     font-weight: 700;
-    font-size: 1.8rem;
-    line-height: 2.1rem;
+    font-size: 18px;
+    line-height: 21px;
 }
 h4{
-    margin: 0rem;
+    margin: 0px;
     font-style: normal;
     font-weight: 700;
-    font-size: 1.6rem;
-    line-height: 1.9rem;
+    font-size: 16px;
+    line-height: 19px;
 }
 p{
-    margin: 0rem;
+    margin: 0px;
     font-style: normal;
     font-weight: 400;
-    font-size: 1.6rem;
-    line-height: 1.9rem;
+    font-size: 16px;
+    line-height: 19px;
 }
 a{
     text-decoration: none;
@@ -62,49 +60,49 @@ a:visited{
 
 /* header */
 header{
-    height: 7.9rem;
+    height: 79px;
     display: flex;
     justify-content: space-around;
 }
 .index{
     display: block;
-    margin-top: 0rem;
-    margin-left: 0rem;
-    margin-right: 99rem;
-    width: 12.1rem;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 990px;
+    width: 121px;
 }
 #logo {    
-    margin-top: 3rem;
-    margin-left: 3rem;
-    width: 6.1rem;
-    height: 1.96rem;
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 61px;
+    height: 19px;
 }
 nav {
     display: block;
     display: flex;
     flex-direction: row;
-    width: 32.86rem;
-    margin-top: 0rem;
-    padding-bottom: 1.4rem;
-    margin-right: 0rem;
+    width: 328.6px;
+    margin-top: 0px;
+    padding-bottom: 14px;
+    margin-right: 0px;
     align-items: start;
 } 
 .menu1{
-    padding-top: 1.6rem;
-    margin-left: 4.23rem;
+    padding-top: 16px;
+    margin-left: 42.3px;
     font-style: normal;
     font-weight: 400;
-    font-size: 1.6rem;
-    line-height: 1.9rem;
+    font-size: 16px;
+    line-height: 19px;
     text-align: center;
 }
 .menu2{
-    padding-top:1.6rem;
-    margin-left: 6.9rem;
+    padding-top:16px;
+    margin-left: 69px;
     font-style: normal;
     font-weight: 400;
-    font-size: 1.6rem;
-    line-height: 1.9rem;
+    font-size: 16px;
+    line-height: 19px;
     text-align: center;
 }
 .menu1:hover{
@@ -122,30 +120,29 @@ nav {
 .research{
     display: flex;
     flex-direction: column;
-    width: 134rem;
-    height: 28.1rem;
-    margin-left: 5rem;
-    margin-top: 3rem;
-    gap: 3.5rem;
+    width: 1340px;
+    height: 281px;
+    margin-left: 50px;
+    gap: 35px;
 }
 .researchtitle{
-    height: 5.3rem;
-    gap: 0.8rem;
+    height: 53px;
+    gap: 8px;
 }
 form{
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0rem;
-    gap: 0rem;
-    width: 37.7rem;
-    height: 4.9rem;
+    padding: 0px;
+    gap: 0px;
+    width: 377px;
+    height: 49px;
     border: 1px solid #F2F2F2;
     border-radius: 15px;
 }
 .fa-location-dot{
-    width: 5rem;
-    height: 4.9rem;
+    width: 50px;
+    height: 49px;
     color: black;
     background: #F2F2F2;
     border: 1px solid #F2F2F2;
@@ -153,43 +150,43 @@ form{
 }
 .fa-location-dot:before{
     position: relative;
-    width: 1.4rem;
-    height: 1.8rem;
-    left: 1.8rem;
-    top: 1.5rem;
+    width: 14px;
+    height: 18px;
+    left: 18px;
+    top: 15px;
 }
 #champ{
-    width: 19.5rem;
-    height: 4.9rem;
-    padding: 0rem;
+    width: 195px;
+    height: 49px;
+    padding: 0px;
     border: hidden;
 }
 #champ::placeholder{
-    width: 14.7rem;
+    width: 147px;
     font-style: normal;
     font-weight: 700;
-    font-size: 1.8rem;
-    line-height: 2.1rem;
+    font-size: 18px;
+    line-height: 21px;
     text-align: center; 
 }
 input[type=submit]{
-    padding: 1.4rem 1.6rem;
-    width: 13.2rem;
-    height: 4.9rem;
+    padding: 14px 16px;
+    width: 132px;
+    height: 49px;
     background: #0065FC;
     border: 1px solid #0065FC;
     border-radius: 0px 15px 15px 0px;
     font-style: normal;
     font-weight: 700;
-    font-size: 1.8rem;
-    line-height: 2.1rem;
+    font-size: 18px;
+    line-height: 21px;
     text-align: center;
     color: #FFFFFF;
 }
 .filters{
     display: flex;
     flex-direction: row;
-    gap: 1.5rem;
+    gap: 15px;
     align-items: center;
 }
 .filter{
@@ -197,11 +194,11 @@ input[type=submit]{
     flex-direction: row;
     align-items: center;
     align-content: center;
-    height: 5rem;
+    height: 50px;
     border: 2px solid #D9D9D9;
     border-radius: 25px;
-    padding: 0.4rem 1.9rem;
-    gap: 1rem;
+    padding: 4px 19px;
+    gap: 10px;
 }
 .filter:hover{
     background: #DEEBFF;
@@ -210,18 +207,18 @@ input[type=submit]{
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap : 2rem;
-    padding: 0rem;
-    width: 134rem;
-    height: 2.4rem;
+    gap : 20px;
+    padding: 0px;
+    width: 1340px;
+    height: 24px;
 }
 
 .fa-info::before{
     border: 1px solid #D9D9D9;
     border-radius: 100%;
     padding: 50% 100%;
-    max-height: 2.4rem;
-    max-width: 2.4rem;
+    max-height: 24px;
+    max-width: 24px;
 }
 
 /* Hébergements - Populaires Card1-2 */
@@ -229,43 +226,43 @@ input[type=submit]{
 .hébergements-and-populaires{
     display: flex;
     flex-direction: row;
-    margin-left: 5rem;
-    margin-top: 3.5rem;
-    gap: 4rem;
-    width: 134rem;
-    height: 61.15rem;
+    margin-left: 50px;
+    gap: 40px;
+    width: 1340px;
+    height: 611,5px;
 }
 .hébergements{
     display: flex;
     flex-direction: column;
-    padding: 3rem;
-    gap: 3rem; 
-    width: 87.1rem;
-    height: 55.15rem;
+    margin-top: 35px;
+    padding: 30px;
+    gap: 30px; 
+    width: 871px;
+    height: 611.5px;
     background-color: #F2F2F2;
     border-radius: 15px;
 }
 .aligncard1{
     display: flex;
     flex-direction: row;
-    padding: 0rem;
-    gap: 3rem;
-    width: 81.1rem;
-    height: 20.725rem;
+    padding: 0px;
+    gap: 30px;
+    width: 811px;
+    height: 207.25px;
 }
 .card1 {
     display: flex;
     flex-direction: column;
-    width: 25.033rem;
-    height: 20.725rem;
+    width: 250.33px;
+    height: 207.25px;
     box-shadow: 0 3px 15px 0 rgba(0,0,0,0.1);
     border-radius: 20px;
     background: #FFFFFF;
   }
 .card1 img {
     object-fit: cover;
-    width: 24.033rem;
-    height: 12.4rem;
+    width: 240.33px;
+    height: 124px;
     border-top: 5px solid #FFFFFF;
     border-left: 5px solid #FFFFFF;
     border-right: 5px solid #FFFFFF;
@@ -275,23 +272,23 @@ input[type=submit]{
     display: flex;
     flex-direction: column;
     align-items: start;
-    gap: 0.8rem;
-    margin: 0rem 0.5rem;
-    width: 24.033rem;
-    height: 6.425rem;
+    gap: 8px;
+    margin: 0px 5px;
+    width: 240.33px;
+    height: 64.25px;
     background: #FFFFFF;
 }
 .pcards{
     font-style: normal;
     font-weight: 400;
-    font-size: 1.4rem;
-    line-height: 1.6rem;
+    font-size: 14px;
+    line-height: 16px;
 }
 .blue_star{
     display: flex;
     flex-direction: row;
-    width: 8.1rem;
-    font-size: 1.325rem;
+    width: 81px;
+    font-size: 13.25px;
 }
 .empty{
     color: #F2F2F2;
@@ -301,10 +298,11 @@ input[type=submit]{
 .populaires{
     display: flex;
     flex-direction: column;
-    padding: 3rem;
-    gap: 3rem;
-    width: 42.9rem;
-    height: 55.15rem;
+    margin-top: 35px;
+    padding: 30px;
+    gap: 30px;
+    width: 429px;
+    height: 611.5px;
     background-color: #F2F2F2;
     border-radius: 15px;
 }
@@ -312,29 +310,29 @@ input[type=submit]{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 36.9rem;
-    height: 2.6rem;
+    width: 369px;
+    height: 26px;
 }
 .aligncard2{
     display:flex;
     flex-direction: column;
-    padding: 0rem;
-    gap: 3rem;
-    width: 36.9rem;
-    height: 49.2rem;
+    padding: 0px;
+    gap: 30px;
+    width: 369px;
+    height: 492px;
 }
 .card2{
     display: flex;
     flex-direction: row;
-    width: 36.9rem;
-    height: 14.4rem;    
+    width: 369px;
+    height: 144px;    
     box-shadow: 0px 3px 15px 0px rgba(0,0,0,0.1);
     border-radius: 20px; 
 }
 .card2 img {
     object-fit: cover;
-    width: 12.3rem;
-    height: 13.4rem;
+    width: 123px;
+    height: 134px;
     border-top: 5px solid #FFFFFF;
     border-left: 5px solid #FFFFFF;
     border-bottom: 5px solid #FFFFFF;
@@ -345,9 +343,9 @@ input[type=submit]{
     flex-direction: column;
     align-items: flex-start;
     padding: 5px 0px;
-    gap: 2.4rem;
-    width: 24.6rem;
-    height: 13.4rem;
+    gap: 24px;
+    width: 246px;
+    height: 134px;
     border-radius: 0px 20px 20px 0px;
     background: #FFFFFF;
 }
@@ -355,54 +353,53 @@ input[type=submit]{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding-top: 1.5rem;
-    padding-left: 1.5rem;
-    gap: 0.5rem;
-    width: 22.6rem;
-    height: 8.3rem;
+    padding-top: 15px;
+    padding-left: 15px;
+    gap: 5px;
+    width: 226px;
+    height: 83px;
 }
 .blue_star2{
     display: flex;
     flex-direction: row;
-    padding-left: 1.5rem;
-    width: 6.8rem;
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
+    padding-left: 15px;
+    width: 68px;
+    font-size: 12px;
+    margin-bottom: 10px;
 }
 
 /* Activites */
 .activites{
     display:flex;
     flex-direction: column;
-    margin-top: 3.5rem;
-    margin-left: 5rem;
-    padding: 3rem;
-    width: 134rem;
-    height: 49.902rem;
+    margin-top: 65px;
+    margin-left: 50px;
+    width: 1340px;
+    height: 559.02px;
 }
 .aligncard3{
     display: flex;
     flex-direction: row;
-    gap: 3rem;
-    margin-top: 3rem;
+    gap: 30px;
+    margin-top: 30px;
 }
 .card3{
     display: flex;
     flex-direction: column;
-    width: 29.75rem;
-    height: 43.9rem;
+    width: 297.5px;
+    height: 439px;
     box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.1));
     border-radius: 20px;
 }
 .card3 img{
     object-fit: cover;
-    width: 29.75rem;
-    height: 38rem;
+    width: 297.5px;
+    height: 380px;
     border-radius: 20px 20px 0px 0px;
 }
 .textcard3{
-    margin-top: 2rem;
-    margin-left: 1.9rem;
+    margin-top: 20px;
+    margin-left: 19px;
 }
 
 /* Footer */
@@ -410,17 +407,17 @@ input[type=submit]{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-top: 3.5rem;
-    margin-left: 5rem;
-    margin-right: 5rem;
-    width: 134rem;
-    height: 16.3rem;
+    margin-top: 35px;
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 1340px;
+    height: 163px;
     background: #F2F2F2;
 }
 .foot1{
     display: flex;
     flex-direction: column;
     width: 33%;
-    padding: 2rem;
-    gap: 1.5rem;
+    padding: 20px;
+    gap: 15px;
 }
