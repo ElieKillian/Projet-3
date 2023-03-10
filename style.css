@@ -1,6 +1,7 @@
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
+    
 }
 html{
     font-size: 10px;
@@ -14,39 +15,35 @@ html{
     color: var(--main-color);
 }
 body {
-    height: 100%;
+    display: flex;
+    justify-content: center;
     margin: 0rem;
     padding: 0rem;
 }
 .container{
-    width: 100%;
     min-width: 3.2rem;
     max-width: 144rem;
 }
-h2{
+h2, h3, h4, p{
     margin: 0rem;
     font-style: normal;
+}
+h2{
     font-weight: 700;
     font-size: 2.2rem;
     line-height: 2.6rem; 
 }
 h3{
-    margin: 0rem;
-    font-style: normal;
     font-weight: 700;
     font-size: 1.8rem;
     line-height: 2.1rem;
 }
 h4{
-    margin: 0rem;
-    font-style: normal;
     font-weight: 700;
     font-size: 1.6rem;
     line-height: 1.9rem;
 }
 p{
-    margin: 0rem;
-    font-style: normal;
     font-weight: 400;
     font-size: 1.6rem;
     line-height: 1.9rem;
@@ -62,57 +59,36 @@ a:visited{
 
 /* header */
 header{
-    height: 7.9rem;
+    /* height: 7.9rem; */
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
-.index{
-    display: block;
-    margin-top: 0rem;
-    margin-left: 0rem;
-    margin-right: 99rem;
-    width: 12.1rem;
-}
-#logo {    
+header img{    
+    
     margin-top: 3rem;
     margin-left: 3rem;
     width: 6.1rem;
     height: 1.96rem;
 }
 nav {
-    display: block;
     display: flex;
-    flex-direction: row;
-    width: 32.86rem;
+    /* width: 32.86rem; */
     margin-top: 0rem;
-    padding-bottom: 1.4rem;
-    margin-right: 0rem;
     align-items: start;
+    gap: 6.9rem;
+    margin-right: 5rem;
 } 
-.menu1{
+.menu{
     padding-top: 1.6rem;
-    margin-left: 4.23rem;
+    /* margin-left: 4.23rem; */
     font-style: normal;
     font-weight: 400;
     font-size: 1.6rem;
     line-height: 1.9rem;
     text-align: center;
 }
-.menu2{
-    padding-top:1.6rem;
-    margin-left: 6.9rem;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.6rem;
-    line-height: 1.9rem;
-    text-align: center;
-}
-.menu1:hover{
-    border-top: 2px solid;
-    border-color:#0065FC;
-    color: #0065FC;
-}
-.menu2:hover{
+.menu:hover{
+    padding-top: 1.4rem;
     border-top: 2px solid;
     border-color:#0065FC;
     color: #0065FC;
@@ -122,19 +98,17 @@ nav {
 .research{
     display: flex;
     flex-direction: column;
-    width: 134rem;
-    height: 28.1rem;
     margin-left: 5rem;
+    margin-right: 5rem;
     margin-top: 3rem;
     gap: 3.5rem;
 }
 .researchtitle{
-    height: 5.3rem;
+    /* height: 5.3rem; */
     gap: 0.8rem;
 }
 form{
     display: flex;
-    flex-direction: row;
     align-items: center;
     padding: 0rem;
     gap: 0rem;
@@ -153,8 +127,7 @@ form{
 }
 .fa-location-dot:before{
     position: relative;
-    width: 1.4rem;
-    height: 1.8rem;
+    font-size: 1.6rem;
     left: 1.8rem;
     top: 1.5rem;
 }
@@ -165,7 +138,7 @@ form{
     border: hidden;
 }
 #champ::placeholder{
-    width: 14.7rem;
+    /* width: 14.7rem; */
     font-style: normal;
     font-weight: 700;
     font-size: 1.8rem;
@@ -174,8 +147,8 @@ form{
 }
 input[type=submit]{
     padding: 1.4rem 1.6rem;
-    width: 13.2rem;
-    height: 4.9rem;
+    /* width: 13.2rem;
+    height: 4.9rem; */
     background: #0065FC;
     border: 1px solid #0065FC;
     border-radius: 0px 15px 15px 0px;
@@ -188,27 +161,31 @@ input[type=submit]{
 }
 .filters{
     display: flex;
-    flex-direction: row;
     gap: 1.5rem;
     align-items: center;
 }
 .filter{
     display: flex;
-    flex-direction: row;
     align-items: center;
     align-content: center;
-    height: 5rem;
+    /* height: 5rem; */
     border: 2px solid #D9D9D9;
     border-radius: 25px;
     padding: 0.4rem 1.9rem;
     gap: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
 }
 .filter:hover{
     background: #DEEBFF;
 }
+.fa-solid{
+    font-size: 1.6rem;
+}
 .info{
     display: flex;
-    flex-direction: row;
     align-items: center;
     gap : 2rem;
     padding: 0rem;
@@ -222,47 +199,48 @@ input[type=submit]{
     padding: 50% 100%;
     max-height: 2.4rem;
     max-width: 2.4rem;
+    font-size: 1.6rem;
 }
 
-/* Hébergements - Populaires Card1-2 */
+/* Hébergements - Populaires Cards */
 
-.hébergements-and-populaires{
+.lodgings-and-populars{
     display: flex;
-    flex-direction: row;
     margin-left: 5rem;
+    margin-right: 5rem;
     margin-top: 3.5rem;
     gap: 4rem;
-    width: 134rem;
-    height: 61.15rem;
+    /* width: 134rem;
+    height: 61.15rem; */
 }
-.hébergements{
+.lodgings{
     display: flex;
     flex-direction: column;
     padding: 3rem;
     gap: 3rem; 
-    width: 87.1rem;
-    height: 55.15rem;
+    /* width: 87.1rem;
+    height: 55.15rem; */
     background-color: #F2F2F2;
     border-radius: 15px;
 }
-.aligncard1{
+.align-cards-lodgings{
     display: flex;
-    flex-direction: row;
     padding: 0rem;
     gap: 3rem;
-    width: 81.1rem;
-    height: 20.725rem;
+    /* width: 81.1rem;
+    height: 20.725rem; */
 }
-.card1 {
+.cards-lodgings {
     display: flex;
     flex-direction: column;
-    width: 25.033rem;
+    width: calc((100%+3rem)/3); /*25.033rem; */
     height: 20.725rem;
+    gap: 0.4rem;
     box-shadow: 0 3px 15px 0 rgba(0,0,0,0.1);
     border-radius: 20px;
     background: #FFFFFF;
   }
-.card1 img {
+.cards-lodgings img {
     object-fit: cover;
     width: 24.033rem;
     height: 12.4rem;
@@ -271,7 +249,7 @@ input[type=submit]{
     border-right: 5px solid #FFFFFF;
     border-radius: 20px 20px 0px 0px;
   }
-.textcard1 {
+.text-cards-lodgings {
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -287,9 +265,8 @@ input[type=submit]{
     font-size: 1.4rem;
     line-height: 1.6rem;
 }
-.blue_star{
+.ratings-lodgings{
     display: flex;
-    flex-direction: row;
     width: 8.1rem;
     font-size: 1.325rem;
 }
@@ -298,40 +275,39 @@ input[type=submit]{
 }
 
 /* Populaires */
-.populaires{
+.populars{
     display: flex;
     flex-direction: column;
     padding: 3rem;
     gap: 3rem;
-    width: 42.9rem;
-    height: 55.15rem;
+    /* width: 42.9rem;
+    height: 55.15rem; */
     background-color: #F2F2F2;
     border-radius: 15px;
 }
-.titlepopulaires{
+.title-populars{
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    width: 36.9rem;
-    height: 2.6rem;
+    align-items: center;
+    /* width: 36.9rem;
+    height: 2.6rem; */
 }
-.aligncard2{
+.align-cards-populars{
     display:flex;
     flex-direction: column;
     padding: 0rem;
     gap: 3rem;
-    width: 36.9rem;
-    height: 49.2rem;
+    /* width: 36.9rem;
+    height: 49.2rem; */
 }
-.card2{
+.cards-populars{
     display: flex;
-    flex-direction: row;
     width: 36.9rem;
     height: 14.4rem;    
     box-shadow: 0px 3px 15px 0px rgba(0,0,0,0.1);
     border-radius: 20px; 
 }
-.card2 img {
+.cards-populars img {
     object-fit: cover;
     width: 12.3rem;
     height: 13.4rem;
@@ -340,10 +316,12 @@ input[type=submit]{
     border-bottom: 5px solid #FFFFFF;
     border-radius: 20px 0px 0px 20px;
   }
-.textcard2{
+.fa-chart-line{
+    font-size: 1.6rem;
+}
+.text-cards-populars{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     padding: 5px 0px;
     gap: 2.4rem;
     width: 24.6rem;
@@ -351,7 +329,7 @@ input[type=submit]{
     border-radius: 0px 20px 20px 0px;
     background: #FFFFFF;
 }
-.titlecard2{
+.title-cards-populars{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -361,32 +339,31 @@ input[type=submit]{
     width: 22.6rem;
     height: 8.3rem;
 }
-.blue_star2{
+.ratings-populars{
     display: flex;
-    flex-direction: row;
     padding-left: 1.5rem;
     width: 6.8rem;
     font-size: 1.2rem;
     margin-bottom: 1rem;
 }
 
-/* Activites */
-.activites{
+/* Activités */
+.activities{
     display:flex;
     flex-direction: column;
     margin-top: 3.5rem;
     margin-left: 5rem;
+    margin-right: 5rem;
     padding: 3rem;
-    width: 134rem;
-    height: 49.902rem;
+    /* width: 134rem;
+    height: 49.902rem; */
 }
-.aligncard3{
+.align-cards-activities{
     display: flex;
-    flex-direction: row;
     gap: 3rem;
     margin-top: 3rem;
 }
-.card3{
+.cards-activities{
     display: flex;
     flex-direction: column;
     width: 29.75rem;
@@ -394,27 +371,26 @@ input[type=submit]{
     box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.1));
     border-radius: 20px;
 }
-.card3 img{
+.cards-activities img{
     object-fit: cover;
     width: 29.75rem;
     height: 38rem;
     border-radius: 20px 20px 0px 0px;
 }
-.textcard3{
+.text-cards-activities{
     margin-top: 2rem;
     margin-left: 1.9rem;
 }
 
 /* Footer */
-.footer{
+footer{
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
     margin-top: 3.5rem;
     margin-left: 5rem;
     margin-right: 5rem;
-    width: 134rem;
-    height: 16.3rem;
+    /* width: 134rem;
+    height: 16.3rem; */
     background: #F2F2F2;
 }
 .foot1{
@@ -423,4 +399,46 @@ input[type=submit]{
     width: 33%;
     padding: 2rem;
     gap: 1.5rem;
+}
+
+/* Tablette */ 
+ 
+@media all and (max-width:1024px){
+    .lodgings-and-populars{
+        flex-direction: column;
+    }
+    .align-cards-populars{
+        flex-direction: row;
+    }
+}
+
+
+/* Téléphone */
+
+@media all and (max-width:724px){
+    header{
+        flex-direction: column;
+        align-items: center;
+    }
+    header img{
+        margin-left: 0px;
+    }
+    nav{
+        justify-content:center;
+        width: 100%;
+        margin-right: 0rem;
+        gap: 0rem;
+    }
+    .menu{
+        padding-top: 0rem;
+        padding-bottom: 1.4rem;
+        margin-top: 3rem;
+        width: 100%;
+    }
+    .menu:hover{
+        padding-top: 0rem;
+        padding-bottom: 1.2rem;
+        border-bottom: 2px solid;
+        border-top: hidden;
+    }
 }
