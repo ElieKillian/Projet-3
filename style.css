@@ -373,15 +373,15 @@ input[type=submit]{
 .cards-activities{
     display: flex;
     flex-direction: column;
-    width: 29.75rem;
+    width: 24%;
     height: 43.9rem;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
 }
 .cards-activities img{
     object-fit: cover;
-    width: 29.75rem;
-    height: 38rem;
+    width: 100%;
+    height: 90%;
     border-radius: 20px 20px 0px 0px;
 }
 .text-cards-activities{
@@ -416,8 +416,15 @@ footer{
     .lodgings-and-populars{
         flex-direction: column;
     }
+    .populars{
+        width: auto;
+        height: 25rem;
+    }
     .align-cards-populars{
         flex-direction: row;
+    }
+    .cards-activities{
+        height: 27rem;
     }
 }
 
@@ -473,6 +480,7 @@ footer{
     }
     .filters{
         flex-direction: column;
+        align-items: flex-start;
     }
     .boutons-filters{
         display: grid;
@@ -493,6 +501,7 @@ footer{
     }
     .populars{
         width: auto;
+        height: auto;
     }
     .align-cards-populars{
         flex-direction: column;
