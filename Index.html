@@ -33,14 +33,17 @@
                     <i class="fa-solid fa-location-dot"></i>
                 </label>
                 <input type="search" id="champ" placeholder="Marseille, France" />
-                <input type="submit" value="Rechercher"  />
+                <input type="submit" class="submit-desktop" value="Rechercher"  />
+                <button type="submit" class="submit-phone"><i class="fa-solid fa-magnifying-glass"></i> </button>
             </form>
             <div class="filters">
                 <h3>Filtres</h3>
-                <a class="filter" href="#"><i class="fa-solid fa-money-bill-wave"></i> économique</a>
-                <a class="filter" href="#"><i class="fa-solid fa-person"></i> Familial</a>
-                <a class="filter" href="#"><i class="fa-solid fa-heart"></i> Romantique</a>
-                <a class="filter" href="#"><i class="fa-solid fa-fire"></i> Nos pépites</a>
+                <div class="boutons-filters">
+                    <a class="filter" href="#"><i class="fa-solid fa-money-bill-wave"></i> Économique</a>
+                    <a class="filter" href="#"><i class="fa-solid fa-person"></i> Familial</a>
+                    <a class="filter" href="#"><i class="fa-solid fa-heart"></i> Romantique</a>
+                    <a class="filter" href="#"><i class="fa-solid fa-fire"></i> Nos pépites</a>
+                </div>
             </div>
             <div class="info">
                 <i class="fa-solid fa-info"></i>
@@ -51,7 +54,7 @@
         <section class="lodgings-and-populars">   
             <article class="lodgings">
                 <h2>Hébergements à Marseille</h2>
-                <div class="align-cards-lodgings">
+                <div class="grid-cards-lodgings">
                     <a class="cards-lodgings" href="#">
                         <img src="ImagesBooki/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port">
                         <div class="text-cards-lodgings">
@@ -94,8 +97,6 @@
                             </div>
                         </div>
                     </a>
-                </div>
-                <div class="align-cards-lodgings">
                     <a class="cards-lodgings" href="#">
                         <img src="ImagesBooki/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer">
                         <div class="text-cards-lodgings">
@@ -205,19 +206,19 @@
             <div class="align-cards-activities">
                 <a class="cards-activities" href="#">
                     <img src="ImagesBooki/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux-Port">
-                    <h3 class="text-activities">Vieux-Port</h3>
+                    <h3 class="text-cards-activities">Vieux-Port</h3>
                 </a>
                 <a class="cards-activities" href="#">
                     <img src="ImagesBooki/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues">
-                    <h3 class="text-activities">Fort de Pomègues</h3>
+                    <h3 class="text-cards-activities">Fort de Pomègues</h3>
                 </a>
                 <a class="cards-activities" href="#">
                     <img src="ImagesBooki/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc national des Calanques">
-                    <h3 class="text-activities">Parc national des Calanques</h3>
+                    <h3 class="text-cards-activities">Parc national des Calanques</h3>
                 </a>
                 <a class="cards-activities" href="#">
                     <img src="ImagesBooki/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde">
-                    <h3 class="text-activities">Notre-Dame-de-la-Garde</h3>
+                    <h3 class="text-cards-activities">Notre-Dame-de-la-Garde</h3>
                 </a>
             </div>
         </section>
