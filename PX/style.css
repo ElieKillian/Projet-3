@@ -20,7 +20,7 @@ body {
 .container{
     width: 1440px;
 }
-h2{
+h3{
     margin: 0px;
     font-style: normal;
     font-weight: 700;
@@ -28,7 +28,7 @@ h2{
     /*font-size: 1rem;*/
     line-height: 26px; 
 }
-h3{
+h2{
     margin: 0px;
     font-style: normal;
     font-weight: 700;
@@ -183,7 +183,7 @@ input[type=submit]{
     text-align: center;
     color: #FFFFFF;
 }
-.filters{
+.filters-bar{
     display: flex;
     flex-direction: row;
     gap: 15px;
@@ -278,7 +278,7 @@ input[type=submit]{
     height: 64.25px;
     background: #FFFFFF;
 }
-.pcards{
+.text-price{
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -414,7 +414,7 @@ input[type=submit]{
     height: 163px;
     background: #F2F2F2;
 }
-.foot1{
+.div-footer{
     display: flex;
     flex-direction: column;
     width: 33%;
